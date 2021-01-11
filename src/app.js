@@ -12,6 +12,8 @@ const forecast =require('./utils/forecast.js');
 // console.log(path.join(__dirname,'../public'));
 
 const app = express();
+const port = process.env.PORT || 3000;
+
 const partialsPath = path.join(__dirname,'../views/partials');
 
 
@@ -105,6 +107,6 @@ app.get('*',(req,res)=>{
     });
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("Server is up on port 3000!");
 });
