@@ -16,8 +16,8 @@ weatherForm.addEventListener('submit',(e)=>{
                 messageOne.textContent=(data.error);
             }
             else{
-                messageOne.textContent = (data.location);
-                messageTwo.textContent = "It is "+(data.forecastData.temperature)+" degrees out";
+                messageOne.textContent = (data.address);
+                messageTwo.textContent = (data.forecastData);
             }
         })
     })
